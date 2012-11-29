@@ -23,7 +23,6 @@ You create a row by making a div with class row. Inside a row you can divide you
 		<div class="col"> ... </div>
 		<div class="col"> ... </div>
 	</div>
-
 ```
 
 You can also put rows inside columns and there fore create as many subcolumns as needed. This creates a row with 2 colums where first column is nested with row with 2 columns.
@@ -38,7 +37,6 @@ You can also put rows inside columns and there fore create as many subcolumns as
 		</div>
 		<div class="col"> ... </div>
 	</div>
-
 ```
 
 ##How about that crappy old IE8?
@@ -60,10 +58,18 @@ Crappy old IE8 needs little javascript to get this working. This adds usual col1
 I haven't had a need for more than 3 columns, so I did not bother to create more than 3. If you don't want to nest rows inside columns you can always extend the idea.
 
 This selects a column if its the only one inside a row:
-```div.col:nth-last-of-type(1)```
+```
+	div.col:nth-last-of-type(1)
+```
 
 This selects first column from row with two columns:
-```div.col:nth-last-of-type(2)```
+```
+	div.col:nth-last-of-type(2)
+
+```
 
 And this one selects the second column from row with two columns:
-```div.col:nth-last-of-type(2) + div.col```
+```
+	div.col:nth-last-of-type(2) + div.col
+
+```
