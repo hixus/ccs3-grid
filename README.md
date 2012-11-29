@@ -11,8 +11,7 @@ My grid needs to only know what is a row (.row) and what is a column (.col). The
 
 ```div.col:nth-last-of-type(1) {width: 100%;}
 div.col:nth-last-of-type(2), div.col:nth-last-of-type(2) + div.col {width: 50%;}
-div.col:nth-last-of-type(3), div.col:nth-last-of-type(3) + div.col, div.col:nth-last-of-type(3) + div.col + div.col {width: 33.3333%;}
-```
+div.col:nth-last-of-type(3), div.col:nth-last-of-type(3) + div.col, div.col:nth-last-of-type(3) + div.col + div.col {width: 33.3333%;}```
 
 ##How to use
 
