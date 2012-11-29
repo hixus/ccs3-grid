@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		/* CCS3-grid by CH Innovative (www.chinnovative.com)  */
+			div.row {overflow: hidden;clear: both;}
+			div.col {float:left;}
+			div.col1 {width: 25%};
+			div.col2 {width: 50%};
+			div.col3 {width: 33.3333%};
+			div.col:only-of-type {width: 100%;}
+			div.col:nth-last-of-type(2), div.col:nth-last-of-type(2) + div.col {width: 50%;}
+			div.col:nth-last-of-type(3), div.col:nth-last-of-type(3) + div.col, div.col:nth-last-of-type(3) + div.col + div.col {width: 33.3333%;}
+
+
+		/* Usual grid width (not neccesary) */
+		body {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+
+		h1, p {
+			margin: 0.5em;
+		}
+
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!--[if IE 8]>
+	
+	    <script type="text/javascript">
+			
+			/* This jQuery-script is used for adding suitable col1.. col3 -classes. This is needed because IE8 doesn't support grids CSS3-selectors */
+
+			$(document).ready(function(){
+				$('div.row').each(function() {
+					var $cols = $(this).find('> div.col');
+					$cols.addClass('col' + $cols.length);
+				});
+			});
+
+		</script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!-- row with 3 colums -->
+<div class="row">
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+</div>
+
+<!-- row with 2 colums -->
+<div class="row">
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+</div>
+
+<!-- row with 1 colum -->
+<div class="row">
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+</div>
+
+<!-- row with 2 colums where first column is nested with row with 2 columns -->
+<div class="row">
+	<div class="col">
+		<div class="row">
+			<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+			<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+		</div>
+	</div>
+	<div class="col"><h1>col</h1><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+</div>
+
+</body>
+</html>
