@@ -70,7 +70,10 @@ This selects first column from row with two columns:
 div.col:nth-last-of-type(2)
 ```
 
-And this one selects the second column from row with two columns:
+This one selects the second column from row with two columns:
 ```
 div.col:nth-last-of-type(2) + div.col
 ```
+
+#Licence
+I'm not sure if a couple lines of code can have any copyrights but then again it's way more than rounded corners in Apple's products. So for your peace of mind I grant you the license to use this code how ever you want without any demands from my self. 
