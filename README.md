@@ -76,4 +76,4 @@ div.col:nth-last-of-type(2) + div.col
 ```
 
 #Licence
-I'm not sure if a couple lines of code can have any copyrights but then again it's way more than rounded corners in Apple's products. So for your peace of mind I grant you the license to use this code how ever you want without any demands from my self. 
+I'm not sure if a couple lines of code can have any copyrights but then again it's way more than the idea of rounded corners in Apple's interface. So for your peace of mind I grant you the license to use this code how ever you want without any demands from my self. 
