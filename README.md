@@ -39,7 +39,8 @@ You can also put rows inside columns and there fore create as many subcolumns as
 
 Crappy old IE8 needs little javascript to get this working. This adds usual col1, col2, col3 classes.
 
-```$(document).ready(function(){
+``` var s = "JavaScript syntax highlighting";
+	$(document).ready(function(){
 	$('div.row').each(function() {
 		var $cols = $(this).find('> div.col');
 		$cols.addClass('col' + $cols.length);
